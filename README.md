@@ -40,7 +40,7 @@ docker-compose build hazelcast
 docker-compose up hazelcast
 ```
 
-Then testing out the various API endpoins:
+Then testing out the various API endpoints:
 ```
 curl -v 192.168.99.100:8080/hc/members
 curl -v 192.168.99.100:8080/hc/state
