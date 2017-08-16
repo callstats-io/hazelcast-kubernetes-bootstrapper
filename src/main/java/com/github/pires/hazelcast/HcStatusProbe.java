@@ -146,4 +146,17 @@ public class HcStatusProbe {
 			return new ResponseEntity<String>(clusterState.toString(), HttpStatus.EXPECTATION_FAILED);
 		}
 	}
+
+	@RequestMapping(path = "/shutdownlocal", method = RequestMethod.POST)
+	public ResponseEntity<String> shutDownLocalInstance() {
+		if (HcStatusProbe.hcInstance == null) {
+			logger.error("shutDownLocalInstance - hazelcast instance not created yet!");
+			return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
+		} else {
+			logger.warn("shutDownLocalInstance - INITIATED");
+			HcStatusProbe.hcInstance.shutdown();
+			logger.warn("shutDownLocalInstance - COMPLETED");
+			return new ResponseEntity<String>(HttpStatus.OK);
+		}
+	}
 }
