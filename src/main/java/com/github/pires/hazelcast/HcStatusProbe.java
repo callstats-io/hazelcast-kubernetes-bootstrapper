@@ -128,7 +128,7 @@ public class HcStatusProbe {
 	}
 
 	// get the cluster state (e.g. ACTIVE, FROZEN, PASSIVE, IN_TRANSITION)
-	@RequestMapping(path = "/state", method = RequestMethod.GET)
+	@RequestMapping(path = "/clusterstate", method = RequestMethod.GET)
 	public ResponseEntity<String> getClusterState() {
 
 		if (HcStatusProbe.hcInstance == null) {

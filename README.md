@@ -43,7 +43,7 @@ docker-compose up hazelcast
 Then testing out the various API endpoints:
 ```
 curl -v 192.168.99.100:8080/hc/members
-curl -v 192.168.99.100:8080/hc/state
+curl -v 192.168.99.100:8080/hc/clusterstate
 
 curl --data "dev&dev-pass"  http://192.168.99.100:5701/hazelcast/rest/management/cluster/state
 
