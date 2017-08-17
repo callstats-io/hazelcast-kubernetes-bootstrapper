@@ -10,7 +10,7 @@
 
     <groupId>com.github.pires</groupId>
     <artifactId>hazelcast-kubernetes-bootstrapper</artifactId>
-    <version>3.8.4-SNAPSHOT</version>
+    <version>3.8.3-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Hazelcast Kubernetes Bootstrapper</name>
@@ -80,6 +80,16 @@
             <artifactId>spring-boot-starter</artifactId>
             <version>${spring.boot.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-data-rest</artifactId>
+            <version>${spring.boot.version}</version>
+		</dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
