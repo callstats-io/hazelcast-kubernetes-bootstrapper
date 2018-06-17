@@ -3,9 +3,9 @@ This repo is forked from https://github.com/pires/hazelcast-kubernetes-bootstrap
 ## making releases:
 After making code change or hazelcast version change, to make release of this jar file, do:
 
-1.  generated the jar file via ```$ mvn clean package ```. This will generate the hazelcast jar file under ./target as, e.g, "hazelcast-kubernetes-bootstrapper-3.9.4.jar"
+1.  generated the jar file via ```$ mvn clean package ```. This will generate the hazelcast jar file under ./target as, e.g, "hazelcast-kubernetes-bootstrapper-3.8.8.jar"
 
-2. Create the release tag, e.g. v3.9.4.
+2. Create the release tag, e.g. v3.8.8.
 
 3. Upload the previously generated jar to github as an artifact for the above release.
 
@@ -14,7 +14,7 @@ After making code change or hazelcast version change, to make release of this ja
 hazelcast-kubernetes-bootstrapper
 =================================
 
-Hazelcast (3.9.4) cluster discovery mechanism for Kubernetes.
+Hazelcast (3.8.8) cluster discovery mechanism for Kubernetes.
 
 ## What is
 
